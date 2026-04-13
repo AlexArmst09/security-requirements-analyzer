@@ -122,7 +122,7 @@ def extract_kdes(doc_path, prompt_func):
 
     doc_name = os.path.basename(doc_path).replace(".pdf", "")
     prompt_type = prompt_func.__name__.replace("_prompt", "")
-    yaml_filename = "outputs/" + doc_name + "-" + prompt_type + "-kdes.yaml"
+    yaml_filename = "outputs/" + doc_name + "-kdes.yaml"
 
     with open(yaml_filename, "w") as f:
         yaml.dump(kdes, f, default_flow_style=False)

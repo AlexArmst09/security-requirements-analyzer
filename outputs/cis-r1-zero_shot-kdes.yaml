@@ -1,0 +1,36 @@
+element1:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - '...'
+  - note 1
+  - note 2
+  - description 1
+  - description 2
+element2:
+  name: EKS Service Identity
+  requirements:
+  - 'requirement 1: This service identity is used to identify EKS resources.'
+  - 'requirement 2: It should be unique across all EKS instances.'
+  - 'requirement 3: The service identity should be protected from unauthorized access.'
+  - 'note 1: This is a core component for securing EKS deployments.'
+  - 'note 2: The identity management system should be configured using AWS IAM.'
+  - 'description 1: The EKS Service Identity is a unique identifier for EKS resources.'
+  - 'description 2: It''s essential for managing access control and permissions.'
+element3:
+  name: EKS Instance Identifier
+  requirements:
+  - 'requirement 1: The Instance Identifier must be unique within the cluster.'
+  - 'requirement 2: The Instance Identifier should be static and permanent.'
+  - 'requirement 3: The Instance Identifier should be easily identifiable.'
+  - 'note 1: Helps in identifying and tracking resources.'
+  - 'note 2:  Allows for consistent management of EKS clusters.'
+  - 'description 1:  This is the name of the cluster or instance that is assigned.'
+  - 'description 2: Used for identifying and monitoring the cluster.'
+element4:
+  name: EKS Kubernetes Node ID
+  requirements:
+  - 'requirement 1: The EKS Node ID must be unique across all nodes.'
+  - "requirement 2: The EKS Node ID should reflect the node\u2019s infrastructure."
+  - 'requirement 3: The EKS Node ID should be accessible to the'

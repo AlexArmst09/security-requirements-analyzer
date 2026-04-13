@@ -1,0 +1,51 @@
+element1:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - '...'
+element2:
+  name: CIS Benchmarks
+  requirements:
+  - 'requirement 1: Identify the types of CIS Benchmarks available.'
+  - 'requirement 2: List all the specific CIS Benchmarks covered by the document.'
+  - 'requirement 3: Determine the purpose of each CIS Benchmark.'
+  - 'requirement 4:  Determine the frequency of updates.'
+element3:
+  name: Target Technology Details
+  requirements:
+  - 'requirement 1: Specify the target technology(s) covered by the document.'
+  - 'requirement 2: Provide the version or product(s) of the target technology.'
+  - 'requirement 3: Detail the specific features or capabilities of the target technology.'
+element4:
+  name: Intended Audience
+  requirements:
+  - 'requirement 1: Identify the intended audience for the document.'
+  - 'requirement 2: Determine the level of technical expertise required to understand
+    the document.'
+element5:
+  name: Use of a CIS Benchmark
+  requirements:
+  - 'requirement 1: Establish guidelines for utilizing CIS Benchmarks.'
+  - 'requirement 2: Specify a process for requesting permission to use a benchmark.'
+  - 'requirement 3: Define acceptable limitations for using a benchmark.'
+element6:
+  name: Remediation
+  requirements:
+  - 'requirement 1: Provide examples of remediation steps for addressing vulnerabilities
+    identified by CIS Benchmarks.'
+  - 'requirement 2: Describe how vulnerabilities related to CIS Benchmarks should
+    be handled.'
+element7:
+  name: Summary
+  requirements:
+  - 'requirement 1: Provide a concise summary of the document''s main points.'
+  - 'requirement 2: Explain the importance of the document''s recommendations.'
+element8:
+  name: Typographical Conventions
+  requirements:
+  - 'requirement 1: List the conventions used in the document.'
+  - 'requirement 2: Detail any specific formatting guidelines implemented.'
+element9:
+  name: Recommendation Definitions
+  requirements: []
