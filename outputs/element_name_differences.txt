@@ -1,8 +1,2 @@
-Deployment Procedures
-Benchmark Description
-Audit Logging
-Reporting Metrics
-Data Set
-Monitoring
-Configuration Details
-Security Controls
+Access Control
+Firewall Rules

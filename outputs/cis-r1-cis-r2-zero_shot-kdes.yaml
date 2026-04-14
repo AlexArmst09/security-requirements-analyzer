@@ -3,4 +3,10 @@ element1:
   requirements:
   - requirement 1
   - requirement 2
-  - '...'
+  - requirement 3
+element2:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - requirement 3

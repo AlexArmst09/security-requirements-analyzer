@@ -1,0 +1,9 @@
+element1:
+  name: Password Policy
+  requirements:
+  - Must be 8 characters
+  - Must have uppercase
+element2:
+  name: Access Control
+  requirements:
+  - Must authenticate

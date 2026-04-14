@@ -1,2 +1,2 @@
 FilePath,Severity,Control name,Failed resources,All Resources,Compliance score
-N/A,N/A,N/A,0,0,0
+test.yaml,High,C-0007,1,5,80

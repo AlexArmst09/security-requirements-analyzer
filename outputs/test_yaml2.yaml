@@ -1,0 +1,8 @@
+element1:
+  name: Password Policy
+  requirements:
+  - Must be 8 characters
+element2:
+  name: Firewall Rules
+  requirements:
+  - Must block port 22
