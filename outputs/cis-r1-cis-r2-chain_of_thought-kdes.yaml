@@ -1,0 +1,13 @@
+element1:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - requirement 3
+element2:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - requirement 3
+  - ' Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/'

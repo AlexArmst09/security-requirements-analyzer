@@ -1,0 +1,40 @@
+element1:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - '...'
+element2:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - '...'
+  - ' `Name`:  CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.2.0 - 11-23-2022`'
+  - ' This element identifies the document as a reference to a specific product or
+    service within the CIS SecureSuite. It provides a unique identifier for the document.'
+  - ' `Requirements`:  This is a list of specific requirements, guidelines, or standards
+    associated with the document. These are key for understanding the document''s
+    purpose and what it expects users to do or follow.  The requirement list is extensive
+    and includes:'
+  - '  Terms of Use'
+  - '  Overview'
+  - '  Intended Audience'
+  - '  Consensus Guidance'
+  - '  Typographical Conventions'
+  - '  Recommendation Definitions'
+  - '  Audit Procedure'
+  - '  Remediation Procedure'
+  - '  Default Value'
+  - '  References'
+  - "  CIS Critical Security Controls\xAE (CIS Controls\xAE)"
+  - ' `Description`:  This element provides a high-level explanation of the document''s
+    purpose and overall context. It outlines the document''s intended use and helps
+    users understand why the document exists.  It explains:'
+  - '  The document''s role and function.'
+  - '  The audience to which it is applicable.'
+  - '  The overall goals and objectives it aims to achieve.'
+  - ' `Rationale Statement`:  This element explains the *why* behind a specific policy,
+    standard, or process outlined in the document.  It contextualizes the requirements
+    and helps users understand the value and justification behind them. It shows how
+    the document supports a larger security or operational objective.'

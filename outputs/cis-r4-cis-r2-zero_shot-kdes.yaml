@@ -1,0 +1,64 @@
+element1:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - '...'
+element10:
+  name: Benchmark Recommendation
+  requirements:
+  - 'recommendation ID: R-1234'
+  - 'recommendation description: Enhanced vulnerability scanning for EKS clusters'
+  - 'target technology: Kubernetes'
+  - 'source: CIS Benchmarks'
+element2:
+  name: another example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - '...'
+element3:
+  name: Benchmark Version
+  requirements:
+  - version number
+  - description of version
+  - target technology
+element4:
+  name: Benchmark Recommendation
+  requirements:
+  - recommendation ID
+  - recommendation description
+  - target technology
+  - source
+element5:
+  name: Benchmark Version
+  requirements:
+  - 'version number: v1.6.0'
+  - 'description of version: Updated for enhanced security reporting'
+  - 'target technology: Kubernetes'
+element6:
+  name: Benchmark Recommendation
+  requirements:
+  - 'recommendation ID: R-1234'
+  - 'recommendation description: Enhanced vulnerability scanning for EKS clusters'
+  - 'target technology: Kubernetes'
+  - 'source: CIS Benchmarks'
+element7:
+  name: Benchmark Version
+  requirements:
+  - 'version number: v1.6.0'
+  - 'description of version: Updated for enhanced security reporting'
+  - 'target technology: Kubernetes'
+element8:
+  name: Benchmark Recommendation
+  requirements:
+  - 'recommendation ID: R-1234'
+  - 'recommendation description: Enhanced vulnerability scanning for EKS clusters'
+  - 'target technology: Kubernetes'
+  - 'source: CIS Benchmarks'
+element9:
+  name: Benchmark Version
+  requirements:
+  - 'version number: v1.6.0'
+  - 'description of version: Updated for enhanced security reporting'
+  - 'target technology: Kubernetes'

@@ -12,15 +12,26 @@ def load_model():
     global tokenizer, model
     if model is None:
         tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-        model = AutoModelForCausalLM.from_pretrained(MODEL_NAME, torch_dtype=torch.float32)
+        model = AutoModelForCausalLM.from_pretrained(MODEL_NAME, dtype=torch.float32)
 
 def validate_inputs(doc1_path, doc2_path):
+    texts = {}
     for path in [doc1_path, doc2_path]:
         if not os.path.exists(path):
             raise FileNotFoundError("File not found: " + path)
         if not path.endswith(".pdf"):
             raise ValueError("File is not a PDF: " + path)
-    return True
+        try:
+            doc = fitz.open(path)
+            text = ""
+            for page in doc:
+                text += page.get_text()
+            if len(text.strip()) == 0:
+                raise ValueError("Document is empty: " + path)
+            texts[path] = text
+        except Exception as e:
+            raise ValueError("Could not open document: " + path + " Error: " + str(e))
+    return texts
 
 def extract_text_from_pdf(pdf_path):
     doc = fitz.open(pdf_path)
@@ -29,12 +40,14 @@ def extract_text_from_pdf(pdf_path):
         text += page.get_text()
     return text[:3000]
 
-def zero_shot_prompt(doc_text):
+def zero_shot_prompt(doc1_text, doc2_text):
     return (
-        "Read the following security document and identify all key data elements.\n"
+        "Read the following two security documents and identify all key data elements.\n"
         "For each element provide its name and list all requirements associated with it.\n\n"
-        "Document:\n"
-        + doc_text +
+        "Document 1:\n"
+        + doc1_text +
+        "\n\nDocument 2:\n"
+        + doc2_text +
         "\n\nFormat your response exactly like this:\n"
         "element1:\n"
         "  name: example name\n"
@@ -43,7 +56,7 @@ def zero_shot_prompt(doc_text):
         "    - requirement 2"
     )
 
-def few_shot_prompt(doc_text):
+def few_shot_prompt(doc1_text, doc2_text):
     return (
         "Here are examples of key data elements from security documents:\n\n"
         "Example 1:\n"
@@ -59,20 +72,25 @@ def few_shot_prompt(doc_text):
         "  requirements:\n"
         "    - Users must authenticate before access\n"
         "    - Admins require multi factor authentication\n\n"
-        "Now do the same for this document:\n"
-        + doc_text +
+        "Now do the same for these two documents:\n\n"
+        "Document 1:\n"
+        + doc1_text +
+        "\n\nDocument 2:\n"
+        + doc2_text +
         "\n\nFormat your response exactly like the examples above."
     )
 
-def chain_of_thought_prompt(doc_text):
+def chain_of_thought_prompt(doc1_text, doc2_text):
     return (
         "Let us identify key data elements step by step.\n\n"
-        "Step 1: Read the document carefully\n"
+        "Step 1: Read both documents carefully\n"
         "Step 2: Find any data or system that has security requirements around it\n"
         "Step 3: For each element found list what requirements apply to it\n"
         "Step 4: Format your answer as shown below\n\n"
-        "Document:\n"
-        + doc_text +
+        "Document 1:\n"
+        + doc1_text +
+        "\n\nDocument 2:\n"
+        + doc2_text +
         "\n\nFormat your response exactly like this:\n"
         "element1:\n"
         "  name: example name\n"
@@ -114,15 +132,17 @@ def parse_llm_output(llm_output):
 
     return elements
 
-def extract_kdes(doc_path, prompt_func):
-    text = extract_text_from_pdf(doc_path)
-    prompt = prompt_func(text)
+def extract_kdes(doc1_path, doc2_path, prompt_func):
+    doc1_text = extract_text_from_pdf(doc1_path)
+    doc2_text = extract_text_from_pdf(doc2_path)
+    prompt = prompt_func(doc1_text, doc2_text)
     llm_output = run_llm(prompt)
     kdes = parse_llm_output(llm_output)
 
-    doc_name = os.path.basename(doc_path).replace(".pdf", "")
+    doc1_name = os.path.basename(doc1_path).replace(".pdf", "")
+    doc2_name = os.path.basename(doc2_path).replace(".pdf", "")
     prompt_type = prompt_func.__name__.replace("_prompt", "")
-    yaml_filename = "outputs/" + doc_name + "-kdes.yaml"
+    yaml_filename = "outputs/" + doc1_name + "-" + doc2_name + "-" + prompt_type + "-kdes.yaml"
 
     with open(yaml_filename, "w") as f:
         yaml.dump(kdes, f, default_flow_style=False)
@@ -135,14 +155,18 @@ def collect_llm_outputs(doc1_path, doc2_path):
     prompt_types = ["zero-shot", "few-shot", "chain-of-thought"]
     results = []
 
-    for doc_path in [doc1_path, doc2_path]:
-        text = extract_text_from_pdf(doc_path)
-        for prompt_func, prompt_type in zip(prompt_funcs, prompt_types):
-            prompt = prompt_func(text)
-            llm_output = run_llm(prompt)
-            results.append((prompt_type, prompt, llm_output))
+    doc1_text = extract_text_from_pdf(doc1_path)
+    doc2_text = extract_text_from_pdf(doc2_path)
 
-    output_file = "outputs/llm_outputs.txt"
+    for prompt_func, prompt_type in zip(prompt_funcs, prompt_types):
+        prompt = prompt_func(doc1_text, doc2_text)
+        llm_output = run_llm(prompt)
+        results.append((prompt_type, prompt, llm_output))
+
+    doc1_name = os.path.basename(doc1_path).replace(".pdf", "")
+    doc2_name = os.path.basename(doc2_path).replace(".pdf", "")
+    output_file = "outputs/" + doc1_name + "-" + doc2_name + "-llm-outputs.txt"
+
     with open(output_file, "w") as f:
         for prompt_type, prompt, llm_output in results:
             f.write("*LLM Name*\n" + MODEL_NAME + "\n\n")

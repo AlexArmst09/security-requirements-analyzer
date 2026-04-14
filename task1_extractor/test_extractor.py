@@ -9,22 +9,22 @@ def test_validate_inputs():
         validate_inputs("fake.pdf", "fake2.pdf")
 
 def test_zero_shot_prompt():
-    result = zero_shot_prompt("test document text")
+    result = zero_shot_prompt("test document one", "test document two")
     assert isinstance(result, str)
     assert len(result) > 0
 
 def test_few_shot_prompt():
-    result = few_shot_prompt("test document text")
+    result = few_shot_prompt("test document one", "test document two")
     assert isinstance(result, str)
     assert len(result) > 0
 
 def test_chain_of_thought_prompt():
-    result = chain_of_thought_prompt("test document text")
+    result = chain_of_thought_prompt("test document one", "test document two")
     assert isinstance(result, str)
     assert len(result) > 0
 
 def test_extract_kdes():
-    kdes, yaml_file = extract_kdes("pdfs/cis-r1.pdf", zero_shot_prompt)
+    kdes, yaml_file = extract_kdes("pdfs/cis-r1.pdf", "pdfs/cis-r2.pdf", zero_shot_prompt)
     assert isinstance(kdes, dict)
     assert os.path.exists(yaml_file)
 

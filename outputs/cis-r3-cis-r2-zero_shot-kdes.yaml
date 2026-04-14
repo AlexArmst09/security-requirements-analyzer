@@ -1,0 +1,65 @@
+element1:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - requirement 3
+element10:
+  name: Benchmark Name
+  requirements:
+  - 'requirement 1:'
+element2:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - requirement 3
+element3:
+  name: CIS Benchmark Name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - requirement 3
+element4:
+  name: CIS Benchmark Name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - requirement 3
+element5:
+  name: Benchmark Name
+  requirements:
+  - 'requirement 1: Version Number'
+  - 'requirement 2: Release Date'
+  - 'requirement 3: Content Type (e.g., PDF, HTML)'
+  - 'requirement 4:  Accessibility Requirements (e.g., WCAG)'
+  - 'requirement 5: Data Sensitivity Level (e.g., Confidential, Public)'
+element6:
+  name: CIS Benchmark Name
+  requirements:
+  - 'requirement 1:  Reference Count (number of references)'
+  - 'requirement 2:  Publication Date'
+  - 'requirement 3:  Author'
+  - 'requirement 4:  License (e.g., CC0, CC-BY)'
+element7:
+  name: Benchmark Name
+  requirements:
+  - 'requirement 1: Data Scope'
+  - 'requirement 2:  Data Format (e.g., JSON, CSV)'
+  - 'requirement 3:  Data Validity Rules'
+  - 'requirement 4:  Data Integrity Checks'
+  - 'requirement 5:  Data Collection Method'
+element8:
+  name: Benchmark Name
+  requirements:
+  - 'requirement 1:  Testing Methodology'
+  - 'requirement 2:  Testing Environment'
+  - 'requirement 3:  Sampling Rate'
+  - 'requirement 4:  Coverage Criteria'
+  - 'requirement 5:  Reporting Format'
+element9:
+  name: Benchmark Name
+  requirements:
+  - 'requirement 1:  Impact on Existing Systems'
+  - 'requirement 2:  Risk Assessment'
+  - 'requirement 3:  Business Impact Analysis'

@@ -1,0 +1,9 @@
+element1:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - requirement 3
+  - additional note
+  - reference 1
+  - reference 2

@@ -1,0 +1,715 @@
+*LLM Name*
+google/gemma-3-1b-it
+
+*Prompt Used*
+Read the following two security documents and identify all key data elements.
+For each element provide its name and list all requirements associated with it.
+
+Document 1:
+ 
+Internal Only - General
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark 
+v1.6.0 - 12-23-2024 
+ 
+ 
+Page 1 
+Internal Only - General
+Terms of Use 
+Please see the below link for our current terms of use: 
+https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(CISLegal@cisecurity.org) and request guidance on copyright usage.  
+NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) 
+on a 3rd party (non-CIS owned) site. 
+Page 2 
+Internal Only - General
+Table of Contents 
+Terms of Use ..................................................................................................................... 1 
+Table of Contents ............................................................................................................. 2 
+Overview ............................................................................................................................ 5 
+Important Usage Information .................................................................................................... 5 
+Key Stakeholders.................................................................................................................................... 5 
+Apply the Correct Version of a Benchmark ......................................................................................... 6 
+Exceptions ............................................................................................................................................... 6 
+Remediation ............................................................................................................................................ 7 
+Summary.................................................................................................................................................. 7 
+Target Technology Details ........................................................................................................ 8 
+Intended Audience ..................................................................................................................... 8 
+Consensus Guidance ................................................................................................................. 9 
+Typographical Conventions .................................................................................................... 10 
+Recommendation Definitions ....................................................................................... 11 
+Title ............................................................................................................................................. 11 
+Assessment Status .................................................................................................................. 11 
+Automated ............................................
+
+Document 2:
+ 
+Internal Only - General
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark 
+v1.7.0 - 05-30-2025 
+ 
+ 
+Page 1 
+Internal Only - General
+Terms of Use 
+Please see the below link for our current terms of use: 
+https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(legalnotices@cisecurity.org) and request guidance on copyright usage.  
+NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) 
+on a 3rd party (non-CIS owned) site. 
+Page 2 
+Internal Only - General
+Table of Contents 
+Terms of Use ..................................................................................................................... 1 
+Table of Contents ............................................................................................................. 2 
+Overview ............................................................................................................................ 5 
+Important Usage Information .................................................................................................... 5 
+Key Stakeholders.................................................................................................................................... 5 
+Apply the Correct Version of a Benchmark ......................................................................................... 6 
+Exceptions ............................................................................................................................................... 6 
+Remediation ............................................................................................................................................ 7 
+Summary.................................................................................................................................................. 7 
+Target Technology Details ........................................................................................................ 8 
+Intended Audience ..................................................................................................................... 8 
+Consensus Guidance ................................................................................................................. 9 
+Typographical Conventions .................................................................................................... 10 
+Recommendation Definitions ....................................................................................... 11 
+Title ............................................................................................................................................. 11 
+Assessment Status .................................................................................................................. 11 
+Automated ........................................
+
+Format your response exactly like this:
+element1:
+  name: example name
+  requirements:
+    - requirement 1
+    - requirement 2
+
+*Prompt Type*
+zero-shot
+
+*LLM Output*
+Read the following two security documents and identify all key data elements.
+For each element provide its name and list all requirements associated with it.
+
+Document 1:
+ 
+Internal Only - General
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark 
+v1.6.0 - 12-23-2024 
+ 
+ 
+Page 1 
+Internal Only - General
+Terms of Use 
+Please see the below link for our current terms of use: 
+https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(CISLegal@cisecurity.org) and request guidance on copyright usage.  
+NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) 
+on a 3rd party (non-CIS owned) site. 
+Page 2 
+Internal Only - General
+Table of Contents 
+Terms of Use ..................................................................................................................... 1 
+Table of Contents ............................................................................................................. 2 
+Overview ............................................................................................................................ 5 
+Important Usage Information .................................................................................................... 5 
+Key Stakeholders.................................................................................................................................... 5 
+Apply the Correct Version of a Benchmark ......................................................................................... 6 
+Exceptions ............................................................................................................................................... 6 
+Remediation ............................................................................................................................................ 7 
+Summary.................................................................................................................................................. 7 
+Target Technology Details ........................................................................................................ 8 
+Intended Audience ..................................................................................................................... 8 
+Consensus Guidance ................................................................................................................. 9 
+Typographical Conventions .................................................................................................... 10 
+Recommendation Definitions ....................................................................................... 11 
+Title ............................................................................................................................................. 11 
+Assessment Status .................................................................................................................. 11 
+Automated ............................................
+
+Document 2:
+ 
+Internal Only - General
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark 
+v1.7.0 - 05-30-2025 
+ 
+ 
+Page 1 
+Internal Only - General
+Terms of Use 
+Please see the below link for our current terms of use: 
+https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(legalnotices@cisecurity.org) and request guidance on copyright usage.  
+NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) 
+on a 3rd party (non-CIS owned) site. 
+Page 2 
+Internal Only - General
+Table of Contents 
+Terms of Use ..................................................................................................................... 1 
+Table of Contents ............................................................................................................. 2 
+Overview ............................................................................................................................ 5 
+Important Usage Information .................................................................................................... 5 
+Key Stakeholders.................................................................................................................................... 5 
+Apply the Correct Version of a Benchmark ......................................................................................... 6 
+Exceptions ............................................................................................................................................... 6 
+Remediation ............................................................................................................................................ 7 
+Summary.................................................................................................................................................. 7 
+Target Technology Details ........................................................................................................ 8 
+Intended Audience ..................................................................................................................... 8 
+Consensus Guidance ................................................................................................................. 9 
+Typographical Conventions .................................................................................................... 10 
+Recommendation Definitions ....................................................................................... 11 
+Title ............................................................................................................................................. 11 
+Assessment Status .................................................................................................................. 11 
+Automated ........................................
+
+Format your response exactly like this:
+element1:
+  name: example name
+  requirements:
+    - requirement 1
+    - requirement 2
+    - ...
+element2:
+  name: another name
+  requirements:
+    - requirement 1
+    - requirement 2
+    - ...
+...
+
+Here's the analysis of the documents:
+
+Document 1:
+
+element1:
+  name: Terms of Use
+  requirements:
+    - requirement 1:  Please see the below link for our current terms of use.
+    - requirement 2:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) on a 3rd party (non-CIS owned) site.
+
+element2:
+  name:  Table of Contents
+  requirements:
+    - requirement 1:  Terms of Use ..................................................................................................................... 1
+    - requirement 2:  Table of Contents ............................................................................................................. 2
+    - requirement 3: Overview ............................................................................................................................ 5
+    - requirement 4: Important Usage Information .................................................................................................... 5
+    - requirement 5:  Key Stakeholders ..................................................................................................................................... 5
+    - requirement 6: Apply the Correct Version of a Benchmark ......................................................................................... 6
+    - requirement 7:  Exceptions ............................................................................................................................................... 6
+    - requirement 8: Remediation ............................................................................................................................................ 7
+    - requirement 9: Summary ................................................................................................................................................... 7
+    - requirement 10: Target Technology Details ........................................................................................................ 8
+    - requirement 11: Intended Audience ..................................................................................................................... 8
+    - requirement 12: Consensus Guidance ................................................................................................................. 9
+    - requirement 13: Typographical Conventions .................................................................................................... 10
+    - requirement 14: Recommendation Definitions ....................................................................................... 11
+    - requirement 15: Title ............................................................................................................................................. 11
+    - requirement 16: Assessment Status .................................................................................................................. 11
+    - requirement 17: Automated .....................................................
+
+Document 2:
+
+element1:
+  name: Terms of Use
+
+
+==================================================
+
+*LLM Name*
+google/gemma-3-1b-it
+
+*Prompt Used*
+Here are examples of key data elements from security documents:
+
+Example 1:
+element1:
+  name: Password Policy
+  requirements:
+    - Passwords must be 8 or more characters
+    - Passwords must contain uppercase letters
+    - Passwords must expire every 90 days
+
+Example 2:
+element1:
+  name: Access Control
+  requirements:
+    - Users must authenticate before access
+    - Admins require multi factor authentication
+
+Now do the same for these two documents:
+
+Document 1:
+ 
+Internal Only - General
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark 
+v1.6.0 - 12-23-2024 
+ 
+ 
+Page 1 
+Internal Only - General
+Terms of Use 
+Please see the below link for our current terms of use: 
+https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(CISLegal@cisecurity.org) and request guidance on copyright usage.  
+NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) 
+on a 3rd party (non-CIS owned) site. 
+Page 2 
+Internal Only - General
+Table of Contents 
+Terms of Use ..................................................................................................................... 1 
+Table of Contents ............................................................................................................. 2 
+Overview ............................................................................................................................ 5 
+Important Usage Information .................................................................................................... 5 
+Key Stakeholders.................................................................................................................................... 5 
+Apply the Correct Version of a Benchmark ......................................................................................... 6 
+Exceptions ............................................................................................................................................... 6 
+Remediation ............................................................................................................................................ 7 
+Summary.................................................................................................................................................. 7 
+Target Technology Details ........................................................................................................ 8 
+Intended Audience ..................................................................................................................... 8 
+Consensus Guidance ................................................................................................................. 9 
+Typographical Conventions .................................................................................................... 10 
+Recommendation Definitions ....................................................................................... 11 
+Title ............................................................................................................................................. 11 
+Assessment Status .................................................................................................................. 11 
+Automated ............................................
+
+Document 2:
+ 
+Internal Only - General
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark 
+v1.7.0 - 05-30-2025 
+ 
+ 
+Page 1 
+Internal Only - General
+Terms of Use 
+Please see the below link for our current terms of use: 
+https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(legalnotices@cisecurity.org) and request guidance on copyright usage.  
+NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) 
+on a 3rd party (non-CIS owned) site. 
+Page 2 
+Internal Only - General
+Table of Contents 
+Terms of Use ..................................................................................................................... 1 
+Table of Contents ............................................................................................................. 2 
+Overview ............................................................................................................................ 5 
+Important Usage Information .................................................................................................... 5 
+Key Stakeholders.................................................................................................................................... 5 
+Apply the Correct Version of a Benchmark ......................................................................................... 6 
+Exceptions ............................................................................................................................................... 6 
+Remediation ............................................................................................................................................ 7 
+Summary.................................................................................................................................................. 7 
+Target Technology Details ........................................................................................................ 8 
+Intended Audience ..................................................................................................................... 8 
+Consensus Guidance ................................................................................................................. 9 
+Typographical Conventions .................................................................................................... 10 
+Recommendation Definitions ....................................................................................... 11 
+Title ............................................................................................................................................. 11 
+Assessment Status .................................................................................................................. 11 
+Automated ........................................
+
+Format your response exactly like the examples above.
+
+*Prompt Type*
+few-shot
+
+*LLM Output*
+Here are examples of key data elements from security documents:
+
+Example 1:
+element1:
+  name: Password Policy
+  requirements:
+    - Passwords must be 8 or more characters
+    - Passwords must contain uppercase letters
+    - Passwords must expire every 90 days
+
+Example 2:
+element1:
+  name: Access Control
+  requirements:
+    - Users must authenticate before access
+    - Admins require multi factor authentication
+
+Now do the same for these two documents:
+
+Document 1:
+ 
+Internal Only - General
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark 
+v1.6.0 - 12-23-2024 
+ 
+ 
+Page 1 
+Internal Only - General
+Terms of Use 
+Please see the below link for our current terms of use: 
+https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(CISLegal@cisecurity.org) and request guidance on copyright usage.  
+NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) 
+on a 3rd party (non-CIS owned) site. 
+Page 2 
+Internal Only - General
+Table of Contents 
+Terms of Use ..................................................................................................................... 1 
+Table of Contents ............................................................................................................. 2 
+Overview ............................................................................................................................ 5 
+Important Usage Information .................................................................................................... 5 
+Key Stakeholders.................................................................................................................................... 5 
+Apply the Correct Version of a Benchmark ......................................................................................... 6 
+Exceptions ............................................................................................................................................... 6 
+Remediation ............................................................................................................................................ 7 
+Summary.................................................................................................................................................. 7 
+Target Technology Details ........................................................................................................ 8 
+Intended Audience ..................................................................................................................... 8 
+Consensus Guidance ................................................................................................................. 9 
+Typographical Conventions .................................................................................................... 10 
+Recommendation Definitions ....................................................................................... 11 
+Title ............................................................................................................................................. 11 
+Assessment Status .................................................................................................................. 11 
+Automated ............................................
+
+Document 2:
+ 
+Internal Only - General
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark 
+v1.7.0 - 05-30-2025 
+ 
+ 
+Page 1 
+Internal Only - General
+Terms of Use 
+Please see the below link for our current terms of use: 
+https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(legalnotices@cisecurity.org) and request guidance on copyright usage.  
+NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) 
+on a 3rd party (non-CIS owned) site. 
+Page 2 
+Internal Only - General
+Table of Contents 
+Terms of Use ..................................................................................................................... 1 
+Table of Contents ............................................................................................................. 2 
+Overview ............................................................................................................................ 5 
+Important Usage Information .................................................................................................... 5 
+Key Stakeholders.................................................................................................................................... 5 
+Apply the Correct Version of a Benchmark ......................................................................................... 6 
+Exceptions ............................................................................................................................................... 6 
+Remediation ............................................................................................................................................ 7 
+Summary.................................................................................................................................................. 7 
+Target Technology Details ........................................................................................................ 8 
+Intended Audience ..................................................................................................................... 8 
+Consensus Guidance ................................................................................................................. 9 
+Typographical Conventions .................................................................................................... 10 
+Recommendation Definitions ....................................................................................... 11 
+Title ............................................................................................................................................. 11 
+Assessment Status .................................................................................................................. 11 
+Automated ............................
+
+Which data elements are most relevant?
+
+A.  Version Number
+B.  Date of Release
+C.  Security Risk
+D.  Technical Specifications
+E.  Key Stakeholders
+F.  Compliance Standards
+G.  Error Handling
+
+The correct answer is C. Security Risk.
+
+Here's why:
+
+The documents primarily deal with terms of use, how to use CIS Benchmarks, and legal considerations related to copyright.  Security risks (like vulnerabilities) are not explicitly presented. The listed options are all relevant to the context of using and handling CIS Benchmark documentation.
+
+Let's look at why the other options are less relevant:
+
+*   A. Version Number: While version numbers are important, the documents don't focus primarily on that.
+*   B. Date of Release:  Date is relevant, but less crucial than the *content* of the document.
+*   D. Technical Specifications:  Detailed technical details are mostly in other sections.
+*   E. Key Stakeholders:  While stakeholders are important, it's not the central topic.
+*   F. Compliance Standards:  Compliance is an *aspect* of the documents, but not the primary focus.
+*   G. Error Handling:  Error handling is a technical function, not a core concept.
+
+Therefore, the best answer is C. Security Risk.
+
+
+==================================================
+
+*LLM Name*
+google/gemma-3-1b-it
+
+*Prompt Used*
+Let us identify key data elements step by step.
+
+Step 1: Read both documents carefully
+Step 2: Find any data or system that has security requirements around it
+Step 3: For each element found list what requirements apply to it
+Step 4: Format your answer as shown below
+
+Document 1:
+ 
+Internal Only - General
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark 
+v1.6.0 - 12-23-2024 
+ 
+ 
+Page 1 
+Internal Only - General
+Terms of Use 
+Please see the below link for our current terms of use: 
+https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(CISLegal@cisecurity.org) and request guidance on copyright usage.  
+NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) 
+on a 3rd party (non-CIS owned) site. 
+Page 2 
+Internal Only - General
+Table of Contents 
+Terms of Use ..................................................................................................................... 1 
+Table of Contents ............................................................................................................. 2 
+Overview ............................................................................................................................ 5 
+Important Usage Information .................................................................................................... 5 
+Key Stakeholders.................................................................................................................................... 5 
+Apply the Correct Version of a Benchmark ......................................................................................... 6 
+Exceptions ............................................................................................................................................... 6 
+Remediation ............................................................................................................................................ 7 
+Summary.................................................................................................................................................. 7 
+Target Technology Details ........................................................................................................ 8 
+Intended Audience ..................................................................................................................... 8 
+Consensus Guidance ................................................................................................................. 9 
+Typographical Conventions .................................................................................................... 10 
+Recommendation Definitions ....................................................................................... 11 
+Title ............................................................................................................................................. 11 
+Assessment Status .................................................................................................................. 11 
+Automated ............................................
+
+Document 2:
+ 
+Internal Only - General
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark 
+v1.7.0 - 05-30-2025 
+ 
+ 
+Page 1 
+Internal Only - General
+Terms of Use 
+Please see the below link for our current terms of use: 
+https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(legalnotices@cisecurity.org) and request guidance on copyright usage.  
+NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) 
+on a 3rd party (non-CIS owned) site. 
+Page 2 
+Internal Only - General
+Table of Contents 
+Terms of Use ..................................................................................................................... 1 
+Table of Contents ............................................................................................................. 2 
+Overview ............................................................................................................................ 5 
+Important Usage Information .................................................................................................... 5 
+Key Stakeholders.................................................................................................................................... 5 
+Apply the Correct Version of a Benchmark ......................................................................................... 6 
+Exceptions ............................................................................................................................................... 6 
+Remediation ............................................................................................................................................ 7 
+Summary.................................................................................................................................................. 7 
+Target Technology Details ........................................................................................................ 8 
+Intended Audience ..................................................................................................................... 8 
+Consensus Guidance ................................................................................................................. 9 
+Typographical Conventions .................................................................................................... 10 
+Recommendation Definitions ....................................................................................... 11 
+Title ............................................................................................................................................. 11 
+Assessment Status .................................................................................................................. 11 
+Automated ........................................
+
+Format your response exactly like this:
+element1:
+  name: example name
+  requirements:
+    - requirement 1
+    - requirement 2
+
+*Prompt Type*
+chain-of-thought
+
+*LLM Output*
+Let us identify key data elements step by step.
+
+Step 1: Read both documents carefully
+Step 2: Find any data or system that has security requirements around it
+Step 3: For each element found list what requirements apply to it
+Step 4: Format your answer as shown below
+
+Document 1:
+ 
+Internal Only - General
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark 
+v1.6.0 - 12-23-2024 
+ 
+ 
+Page 1 
+Internal Only - General
+Terms of Use 
+Please see the below link for our current terms of use: 
+https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(CISLegal@cisecurity.org) and request guidance on copyright usage.  
+NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) 
+on a 3rd party (non-CIS owned) site. 
+Page 2 
+Internal Only - General
+Table of Contents 
+Terms of Use ..................................................................................................................... 1 
+Table of Contents ............................................................................................................. 2 
+Overview ............................................................................................................................ 5 
+Important Usage Information .................................................................................................... 5 
+Key Stakeholders.................................................................................................................................... 5 
+Apply the Correct Version of a Benchmark ......................................................................................... 6 
+Exceptions ............................................................................................................................................... 6 
+Remediation ............................................................................................................................................ 7 
+Summary.................................................................................................................................................. 7 
+Target Technology Details ........................................................................................................ 8 
+Intended Audience ..................................................................................................................... 8 
+Consensus Guidance ................................................................................................................. 9 
+Typographical Conventions .................................................................................................... 10 
+Recommendation Definitions ....................................................................................... 11 
+Title ............................................................................................................................................. 11 
+Assessment Status .................................................................................................................. 11 
+Automated ............................................
+
+Document 2:
+ 
+Internal Only - General
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark 
+v1.7.0 - 05-30-2025 
+ 
+ 
+Page 1 
+Internal Only - General
+Terms of Use 
+Please see the below link for our current terms of use: 
+https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(legalnotices@cisecurity.org) and request guidance on copyright usage.  
+NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) 
+on a 3rd party (non-CIS owned) site. 
+Page 2 
+Internal Only - General
+Table of Contents 
+Terms of Use ..................................................................................................................... 1 
+Table of Contents ............................................................................................................. 2 
+Overview ............................................................................................................................ 5 
+Important Usage Information .................................................................................................... 5 
+Key Stakeholders.................................................................................................................................... 5 
+Apply the Correct Version of a Benchmark ......................................................................................... 6 
+Exceptions ............................................................................................................................................... 6 
+Remediation ............................................................................................................................................ 7 
+Summary.................................................................................................................................................. 7 
+Target Technology Details ........................................................................................................ 8 
+Intended Audience ..................................................................................................................... 8 
+Consensus Guidance ................................................................................................................. 9 
+Typographical Conventions .................................................................................................... 10 
+Recommendation Definitions ....................................................................................... 11 
+Title ............................................................................................................................................. 11 
+Assessment Status .................................................................................................................. 11 
+Automated ........................................
+
+Format your response exactly like this:
+
+**Document 1: Security Considerations**
+
+1.  Terms of Use
+2.  Table of Contents
+3.  Key Stakeholders
+4.  Apply the Correct Version of a Benchmark
+5.  Exceptions
+6.  Remediation
+7.  Summary
+8.  Target Technology Details
+9.  Intended Audience
+10. Consensus Guidance
+11. Typographical Conventions
+12. Recommendation Definitions
+13. Title
+14. Assessment Status
+15. Automated
+
+**Document 2: Security Considerations**
+
+1.  Terms of Use
+2.  Table of Contents
+3.  Key Stakeholders
+4.  Apply the Correct Version of a Benchmark
+5.  Exceptions
+6.  Remediation
+7.  Summary
+8.  Target Technology Details
+9.  Intended Audience
+10. Consensus Guidance
+11. Typographical Conventions
+12. Recommendation Definitions
+13. Title
+14. Assessment Status
+15. Automated
+
+
+==================================================
+

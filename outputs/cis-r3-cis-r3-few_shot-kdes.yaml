@@ -1,0 +1,11 @@
+element1:
+  name: Password Policy
+  requirements:
+  - Passwords must be 8 or more characters
+  - Passwords must contain uppercase letters
+  - Passwords must expire every 90 days
+element2:
+  name: Access Control
+  requirements:
+  - Users must authenticate before access
+  - Admins require multi factor authentication

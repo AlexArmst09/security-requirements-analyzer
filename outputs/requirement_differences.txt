@@ -1,39 +1,33 @@
-EKS Kubernetes Node ID,requirement 3: The EKS Node ID should be accessible to the
-EKS Kubernetes Node ID,requirement 2: The EKS Node ID should reflect the node’s infrastructure.
-EKS Kubernetes Node ID,requirement 1: The EKS Node ID must be unique across all nodes.
-EKS Instance Identifier,requirement 1: The Instance Identifier must be unique within the cluster.
-EKS Instance Identifier,note 2:  Allows for consistent management of EKS clusters.
-EKS Instance Identifier,description 1:  This is the name of the cluster or instance that is assigned.
-EKS Instance Identifier,requirement 2: The Instance Identifier should be static and permanent.
-EKS Instance Identifier,note 1: Helps in identifying and tracking resources.
-EKS Instance Identifier,description 2: Used for identifying and monitoring the cluster.
-EKS Instance Identifier,requirement 3: The Instance Identifier should be easily identifiable.
-EKS Service Identity,requirement 1: This service identity is used to identify EKS resources.
-EKS Service Identity,requirement 3: The service identity should be protected from unauthorized access.
-EKS Service Identity,description 1: The EKS Service Identity is a unique identifier for EKS resources.
-EKS Service Identity,note 2: The identity management system should be configured using AWS IAM.
-EKS Service Identity,description 2: It's essential for managing access control and permissions.
-EKS Service Identity,note 1: This is a core component for securing EKS deployments.
-EKS Service Identity,requirement 2: It should be unique across all EKS instances.
-Typographical Conventions,requirement 2: Detail any specific formatting guidelines implemented.
-Typographical Conventions,requirement 1: List the conventions used in the document.
-CIS Benchmarks,requirement 1: Identify the types of CIS Benchmarks available.
-CIS Benchmarks,requirement 2: List all the specific CIS Benchmarks covered by the document.
-CIS Benchmarks,requirement 4:  Determine the frequency of updates.
-CIS Benchmarks,requirement 3: Determine the purpose of each CIS Benchmark.
-Use of a CIS Benchmark,requirement 1: Establish guidelines for utilizing CIS Benchmarks.
-Use of a CIS Benchmark,requirement 3: Define acceptable limitations for using a benchmark.
-Use of a CIS Benchmark,requirement 2: Specify a process for requesting permission to use a benchmark.
-example name,description 2
-example name,note 1
-example name,note 2
-example name,description 1
-Remediation,requirement 2: Describe how vulnerabilities related to CIS Benchmarks should be handled.
-Remediation,requirement 1: Provide examples of remediation steps for addressing vulnerabilities identified by CIS Benchmarks.
-Summary,requirement 1: Provide a concise summary of the document's main points.
-Summary,requirement 2: Explain the importance of the document's recommendations.
-Intended Audience,requirement 2: Determine the level of technical expertise required to understand the document.
-Intended Audience,requirement 1: Identify the intended audience for the document.
-Target Technology Details,requirement 3: Detail the specific features or capabilities of the target technology.
-Target Technology Details,requirement 2: Provide the version or product(s) of the target technology.
-Target Technology Details,requirement 1: Specify the target technology(s) covered by the document.
+Deployment Procedures, Update management
+Deployment Procedures, Rollback procedures
+Deployment Procedures, Clear steps for deployment
+Benchmark Description, Secure access control
+Benchmark Description, Data encryption
+Benchmark Description, Compliance with CIS security policies
+example name,**Comprehensive Coverage:** Benchmarks cover a broad range of security topics, including container security, networking, and access controls.
+example name,**Vendor Neutrality:**  Maintain a strong commitment to vendor neutrality and provide a more adaptable framework that doesn’t tie organizations too closely to specific technology providers.
+example name,**Iterative Improvement:**  The benchmarks are not static; they evolve with new threat landscapes and technologies, allowing organizations to continuously improve their security.
+example name,**Vendor Lock-in:**  Some benchmarks may be tied to specific vendors or technologies, potentially leading to vendor lock-in.
+example name,**Focus on Automation:**  Prioritize automation capabilities within the benchmarks to streamline the assessment process and improve efficiency.
+example name,**Industry Standards:** They align with industry best practices and are widely adopted by cloud providers, security professionals, and software vendors.
+example name,**Complexity:**  The breadth of the benchmarks can be overwhelming for organizations without a dedicated security team.
+example name,**Implementation Costs:**  Implementing and adopting the benchmarks can require significant investment in tools, training, and resources.
+example name,**Automated Assessment:**  Many benchmarks support automation, enabling continuous monitoring and compliance.
+example name,**Simplified Approach:**  Develop a simplified approach that focuses on core, high-impact security areas (e.g., container security) rather than overwhelming the market with numerous, complex benchmarks.
+example name,**Educational Resources:**  Expand educational resources and training programs to help organizations understand and implement the benchmarks effectively.  Develop guides and examples.
+Reporting Metrics, Reliable monitoring
+Reporting Metrics, Consistent data collection
+Reporting Metrics, Detailed reporting
+Data Set, Realistic Pod configurations
+Data Set, Various pod types and resource requests
+Data Set, Data for verification and assessment
+Audit Logging, Reporting for compliance
+Audit Logging, Traceability
+Audit Logging, Comprehensive audit trail
+Configuration Details, Cluster name
+Configuration Details, Service accounts
+Configuration Details, Node pools
+Configuration Details, Image labels
+Security Controls, Audit logging
+Security Controls, Network policy enforcement
+Security Controls, RBAC roles and permissions

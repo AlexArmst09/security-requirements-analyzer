@@ -1,0 +1,15 @@
+element1:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - requirement 3
+  - additional notes
+  - link to the source document
+element2:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - requirement 3
+  - additional notes

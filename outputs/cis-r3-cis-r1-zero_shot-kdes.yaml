@@ -1,0 +1,70 @@
+element1:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+element10:
+  name: Reference Documentation
+  requirements:
+  - 'requirement 1:  Reference documentation provides necessary links and further
+    details to help users understand the benchmark.'
+element11:
+  name: "CIS Critical Security Controls\xAE"
+  requirements:
+  - "requirement 1: The Benchmark should align with and demonstrate usage of the CIS\
+    \ Critical Security Controls\xAE framework."
+element12:
+  name: Compliance Requirement
+  requirements:
+  - 'requirement 1: The benchmark should demonstrate the ability to meet and follow
+    the principles of CIS Controls.'
+element13:
+  name: Version History
+  requirements:
+  - requirement
+element2:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+element3:
+  name: Version Number
+  requirements:
+  - 'requirement 1: The version number must be a unique identifier for this specific
+    benchmark.'
+  - 'requirement 2: The version number should be updated periodically to reflect changes
+    to the benchmark.'
+element4:
+  name: Benchmark Identifier
+  requirements:
+  - 'requirement 1: The benchmark identifier must be unique to the benchmark.'
+  - 'requirement 2: The benchmark identifier should be used consistently across all
+    benchmarks within the CIS EKS service.'
+element5:
+  name: Recommended Technology Details
+  requirements:
+  - 'requirement 1:  The recommended technology details specify the required hardware
+    and software configurations for the benchmark.'
+  - 'requirement 2:  The recommended technology details are available in the CIS EKS
+    Service documentation.'
+element6:
+  name: Intended Audience
+  requirements:
+  - 'requirement 1: The intended audience includes security professionals, CIS Benchmarks
+    consultants, and anyone involved in the implementation and usage of the CIS EKS
+    service.'
+element7:
+  name: Summary
+  requirements:
+  - "requirement 1:  The summary provides a concise overview of the benchmark\u2019\
+    s purpose and intended use."
+element8:
+  name: Automation Status
+  requirements:
+  - 'requirement 1: The automation status indicates whether the benchmark is fully
+    automated, partially automated, or fully manual.'
+element9:
+  name: Manual Instructions
+  requirements:
+  - 'requirement 1:  Manual instructions detail the steps required to use the benchmark
+    and its associated tools.'

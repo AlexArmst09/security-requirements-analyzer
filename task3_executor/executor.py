@@ -49,16 +49,17 @@ def determine_controls(text1_path, text2_path):
     return output_file
 
 def run_kubescape(controls_file, yamls_path="YAMLfiles"):
+    kubescape_path = os.path.expanduser("~/.kubescape/bin/kubescape")
     if not os.path.exists(controls_file):
         raise FileNotFoundError("Controls file not found: " + controls_file)
     with open(controls_file, "r") as f:
         content = f.read().strip()
     if content == "NO DIFFERENCES FOUND":
-        cmd = ["kubescape", "scan", yamls_path, "--format", "json", "--output", "outputs/kubescape_results.json"]
+        cmd = [kubescape_path, "scan", yamls_path, "--format", "json", "--output", "outputs/kubescape_results.json"]
     else:
         controls = [line.strip() for line in content.split("\n") if line.strip()]
         controls_str = ",".join(controls)
-        cmd = ["kubescape", "scan", "control", controls_str, yamls_path, "--format", "json", "--output", "outputs/kubescape_results.json"]
+        cmd = [kubescape_path, "scan", "control", controls_str, yamls_path, "--format", "json", "--output", "outputs/kubescape_results.json"]
     subprocess.run(cmd)
     results = parse_kubescape_output("outputs/kubescape_results.json")
     return results
@@ -67,7 +68,17 @@ def parse_kubescape_output(json_file):
     if not os.path.exists(json_file):
         return pd.DataFrame(columns=["FilePath", "Severity", "Control name", "Failed resources", "All Resources", "Compliance score"])
     with open(json_file, "r") as f:
-        data = json.load(f)
+        content = f.read().strip()
+    if not content:
+        return pd.DataFrame([{
+            "FilePath": "N/A",
+            "Severity": "N/A",
+            "Control name": "N/A",
+            "Failed resources": 0,
+            "All Resources": 0,
+            "Compliance score": 0
+        }])
+    data = json.loads(content)
     rows = []
     results = data.get("results", [])
     for result in results:

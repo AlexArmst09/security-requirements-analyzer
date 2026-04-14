@@ -1,0 +1,27 @@
+element1:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - '...'
+  - 'document: document name'
+  - 'page: page number'
+  - 'document: document name'
+  - 'page: page number'
+  - ' additional information'
+element2:
+  name: Terms of Use
+  requirements:
+  - ' Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/'
+  - 'document: CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.2.0 - 11-23-2022'
+  - 'page: Page 1'
+  - 'document: CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.2.0 - 11-23-2022'
+  - 'page: Page 2'
+element3:
+  name: "CIS Controls\xAE"
+  requirements:
+  - ' Audit Procedure'
+  - 'document: CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.2.0 - 11-23-2022'
+  - 'page: Page 2'
+  - 'document: CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.2.0 - 11-23-2022'
+  - 'page: Page 2'

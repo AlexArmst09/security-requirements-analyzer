@@ -1,0 +1,26 @@
+element1:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - requirement 3
+element2:
+  name: Benchmark Version
+  requirements:
+  - Version number
+  - Release date
+  - Author
+  - Description
+element3:
+  name: Risk Score
+  requirements:
+  - Risk Score range (e.g., 1-10)
+  - Confidence level (e.g., High, Medium, Low)
+  - Timestamp of assessment
+element4:
+  name: Benchmark Version
+  requirements:
+  - Version number
+  - Release date
+  - Author
+  - Description

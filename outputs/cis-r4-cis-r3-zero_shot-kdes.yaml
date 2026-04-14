@@ -1,0 +1,58 @@
+element1:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - requirement 3
+element10:
+  name: Monitoring
+  requirements: []
+element2:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - requirement 3
+element3:
+  name: Benchmark Description
+  requirements:
+  - ' Compliance with CIS security policies'
+  - ' Secure access control'
+  - ' Data encryption'
+element4:
+  name: Data Set
+  requirements:
+  - ' Realistic Pod configurations'
+  - ' Various pod types and resource requests'
+  - ' Data for verification and assessment'
+element5:
+  name: Reporting Metrics
+  requirements:
+  - ' Consistent data collection'
+  - ' Reliable monitoring'
+  - ' Detailed reporting'
+element6:
+  name: Security Controls
+  requirements:
+  - ' RBAC roles and permissions'
+  - ' Network policy enforcement'
+  - ' Audit logging'
+element7:
+  name: Audit Logging
+  requirements:
+  - ' Comprehensive audit trail'
+  - ' Traceability'
+  - ' Reporting for compliance'
+element8:
+  name: Deployment Procedures
+  requirements:
+  - ' Clear steps for deployment'
+  - ' Update management'
+  - ' Rollback procedures'
+element9:
+  name: Configuration Details
+  requirements:
+  - ' Cluster name'
+  - ' Image labels'
+  - ' Node pools'
+  - ' Service accounts'

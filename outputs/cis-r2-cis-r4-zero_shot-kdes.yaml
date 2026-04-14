@@ -1,0 +1,59 @@
+element1:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - requirement 3
+element10:
+  name: Automated
+  requirements:
+  - 'requirement 1: If automated, what methods are used?'
+  - 'requirement 2:  What processes are automated.'
+element11:
+  name: CIS Benchmark Version
+  requirements: []
+element2:
+  name: example name
+  requirements:
+  - requirement 1
+  - requirement 2
+  - requirement 3
+element3:
+  name: CIS Benchmark Version
+  requirements:
+  - 'requirement 1: Version number (v1.6.0)'
+  - 'requirement 2: Date of release (12-23-2024)'
+  - 'requirement 3:  Reference to the document where the benchmark was mentioned.'
+element4:
+  name: Benchmark Type
+  requirements:
+  - 'requirement 1: Benchmark type (e.g.,  Compute, Network, Security)'
+  - 'requirement 2:  Specific characteristics of the benchmark (e.g., Focus on database
+    performance)'
+element5:
+  name: Target Technology
+  requirements:
+  - 'requirement 1:  Specific technologies targeted by the benchmark (e.g., AWS, Azure,
+    GCP)'
+  - 'requirement 2:  Any specific technologies included in the benchmark.'
+element6:
+  name: Intended Audience
+  requirements:
+  - 'requirement 1:  Who is the intended audience for this benchmark? (e.g. developers,
+    security engineers)'
+element7:
+  name: Consensus Guidance
+  requirements:
+  - 'requirement 1:  How should the audience be aware of the benchmark''s standards
+    and guidelines?'
+  - 'requirement 2:  Should audience follow specific steps of consensus?'
+element8:
+  name: Recommendation Definitions
+  requirements:
+  - 'requirement 1: What recommendations are provided in this benchmark?'
+  - 'requirement 2:  How should the recommendations be used?'
+element9:
+  name: Assessment Status
+  requirements:
+  - 'requirement 1:  How is the benchmark''s accuracy verified?'
+  - 'requirement 2: What type of assessment methodology is used?'
