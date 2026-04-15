@@ -35,6 +35,8 @@ def test_determine_controls_no_differences():
 def test_run_kubescape():
     with open("outputs/controls.txt", "w") as f:
         f.write("NO DIFFERENCES FOUND")
+    if not os.path.exists("YAMLfiles"):
+        os.makedirs("YAMLfiles")
     df = run_kubescape("outputs/controls.txt")
     assert isinstance(df, pd.DataFrame)
 
