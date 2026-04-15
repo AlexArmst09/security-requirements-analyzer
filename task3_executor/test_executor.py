@@ -21,9 +21,10 @@ def setup_module():
         f.write("NO DIFFERENCES IN REGARDS TO ELEMENT REQUIREMENTS")
 
 def test_load_text_files():
-    text1, text2 = load_text_files(TEST_TEXT1, TEST_TEXT2)
+    text1, text2, text3 = load_text_files(TEST_TEXT1, TEST_TEXT2)
     assert isinstance(text1, str)
     assert isinstance(text2, str)
+    assert isinstance(text3, str)
 
 def test_determine_controls_no_differences():
     output_file = determine_controls(TEST_TEXT_NODIFF1, TEST_TEXT_NODIFF2)

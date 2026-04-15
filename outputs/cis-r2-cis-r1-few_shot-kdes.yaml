@@ -4,13 +4,72 @@ element1:
   - Passwords must be 8 or more characters
   - Passwords must contain uppercase letters
   - Passwords must expire every 90 days
+element10:
+  name: References
+  requirements:
+  - "CIS Critical Security Controls\xAE (CIS Controls\xAE) ............................9"
+element11:
+  name: Automation
+  requirements:
+  - Automated .............................................................................................................................
+    8
+element12:
+  name: Manual
+  requirements:
+  - Manual ....................................................................................................................................
+    8
+element13:
+  name: Profile
+  requirements:
+  - Description ...............................................................................................................................
+    8
+element14:
+  name: Assessment Status
+  requirements:
+  - Assessment Status .....................................................................................................................
+    8
 element2:
   name: Access Control
   requirements:
   - Users must authenticate before access
   - Admins require multi factor authentication
+element3:
+  name: Password Policy
+  requirements:
   - Passwords must be 8 or more characters
   - Passwords must contain uppercase letters
   - Passwords must expire every 90 days
+element4:
+  name: Password Policy
+  requirements:
+  - Passwords must be 8 or more characters
+  - Passwords must contain uppercase letters
+  - Passwords must expire every 90 days
+element5:
+  name: Access Control
+  requirements:
   - Users must authenticate before access
   - Admins require multi factor authentication
+element6:
+  name: Table of Contents
+  requirements:
+  - Terms of Use .....................................................................................................................
+    1
+  - Table of Contents .............................................................................................................
+    2
+element7:
+  name: Table of Contents
+  requirements:
+  - Terms of Use ..................................................................................................................
+    1
+  - Table of Contents ...........................................................................................................
+    2
+element8:
+  name: Audit Procedure
+  requirements:
+  - Remediation Procedure ...........................................................................................................
+    9
+element9:
+  name: Remediation Procedure
+  requirements:
+  - Default Value

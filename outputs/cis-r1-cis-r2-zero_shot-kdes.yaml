@@ -3,10 +3,27 @@ element1:
   requirements:
   - requirement 1
   - requirement 2
-  - requirement 3
-element2:
-  name: example name
-  requirements:
-  - requirement 1
-  - requirement 2
-  - requirement 3
+  - '...'
+  - additional notes (optional)
+  - 'requirement 1: The following CIS Benchmark Recommendations should be used, with
+    the caveat that they are *examples* and may need to be adapted for specific environments.'
+  - 'requirement 2: When referencing a CIS Benchmark, provide the correct version
+    number (e.g., CIS Benchmark 10).'
+  - "Source: CIS Security Controls\xAE"
+  - 'requirement 1:  The following terms of use apply to all use of the CIS Amazon
+    Elastic Kubernetes Service (EKS) benchmark.'
+  - 'requirement 2:  The terms of use define the responsibilities and liabilities
+    associated with using the benchmark.'
+  - 'requirement 3: Users should adhere to CIS security best practices in regards
+    to risk management.'
+  - 'requirement 1:  The identified key stakeholders include CIS Security teams, AWS
+    engineering, and Kubernetes experts.'
+  - 'requirement 2:  It is important to clearly articulate these stakeholders to ensure
+    everyone understands the purpose and scope of the benchmark.'
+  - 'requirement 1:  The correct version of the Benchmark is always the one used during
+    the benchmark''s creation.'
+  - 'requirement 2:  If a different version is used, the new version must be formally
+    documented and approved.'
+  - 'requirement 1:  A defined remediation process must be followed when a vulnerability
+    is identified.'
+  - 'requirement 2:  The remediation process'

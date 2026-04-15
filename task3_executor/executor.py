@@ -3,7 +3,7 @@ import subprocess
 import pandas as pd
 import json
 
-def load_text_files(text1_path, text2_path):
+def load_text_files(text1_path, text2_path, text3_path=None):
     for path in [text1_path, text2_path]:
         if not os.path.exists(path):
             raise FileNotFoundError("File not found: " + path)
@@ -11,10 +11,14 @@ def load_text_files(text1_path, text2_path):
         text1 = f.read()
     with open(text2_path, "r") as f:
         text2 = f.read()
-    return text1, text2
+    text3 = ""
+    if text3_path and os.path.exists(text3_path):
+        with open(text3_path, "r") as f:
+            text3 = f.read()
+    return text1, text2, text3
 
-def determine_controls(text1_path, text2_path):
-    text1, text2 = load_text_files(text1_path, text2_path)
+def determine_controls(text1_path, text2_path, text3_path=None):
+    text1, text2, text3 = load_text_files(text1_path, text2_path, text3_path)
     no_diff1 = "NO DIFFERENCES" in text1
     no_diff2 = "NO DIFFERENCES" in text2
     output_file = "outputs/controls.txt"
@@ -34,7 +38,7 @@ def determine_controls(text1_path, text2_path):
         "privilege": ["C-0002"],
         "patch": ["C-0030"],
     }
-    combined_text = (text1 + text2).lower()
+    combined_text = (text1 + text2 + text3).lower()
     matched_controls = set()
     for keyword, controls in keyword_to_controls.items():
         if keyword in combined_text:

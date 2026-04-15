@@ -46,18 +46,32 @@ def compare_requirements(yaml1_path, yaml2_path):
     differences = []
     all_names = set(reqs1.keys()).union(set(reqs2.keys()))
 
+    yaml1_name = os.path.basename(yaml1_path)
+    yaml2_name = os.path.basename(yaml2_path)
+
     for name in all_names:
-        r1 = reqs1.get(name, set())
-        r2 = reqs2.get(name, set())
-        diff = r1.symmetric_difference(r2)
-        for req in diff:
-            differences.append((name, req))
+        in_yaml1 = name in reqs1
+        in_yaml2 = name in reqs2
+
+        if in_yaml1 and not in_yaml2:
+            differences.append(name + ",ABSENT-IN-" + yaml2_name + ",PRESENT-IN-" + yaml1_name + ",NA")
+        elif in_yaml2 and not in_yaml1:
+            differences.append(name + ",ABSENT-IN-" + yaml1_name + ",PRESENT-IN-" + yaml2_name + ",NA")
+        else:
+            r1 = reqs1.get(name, set())
+            r2 = reqs2.get(name, set())
+            only_in_r1 = r1 - r2
+            only_in_r2 = r2 - r1
+            for req in only_in_r1:
+                differences.append(name + ",ABSENT-IN-" + yaml2_name + ",PRESENT-IN-" + yaml1_name + "," + req)
+            for req in only_in_r2:
+                differences.append(name + ",ABSENT-IN-" + yaml1_name + ",PRESENT-IN-" + yaml2_name + "," + req)
 
     output_file = "outputs/requirement_differences.txt"
     with open(output_file, "w") as f:
         if differences:
-            for name, req in differences:
-                f.write(name + "," + req + "\n")
+            for line in differences:
+                f.write(line + "\n")
         else:
             f.write("NO DIFFERENCES IN REGARDS TO ELEMENT REQUIREMENTS")
 

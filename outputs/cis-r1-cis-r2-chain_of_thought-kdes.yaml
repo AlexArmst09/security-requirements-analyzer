@@ -3,11 +3,25 @@ element1:
   requirements:
   - requirement 1
   - requirement 2
-  - requirement 3
 element2:
-  name: example name
+  name: CIS Amazon Elastic
   requirements:
-  - requirement 1
-  - requirement 2
-  - requirement 3
-  - ' Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/'
+  - 'requirement 1: Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/'
+element3:
+  name: Internal Only - General
+  requirements:
+  - 'requirement 1: Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/'
+element4:
+  name: Terms of Use
+  requirements:
+  - 'requirement 1: Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/'
+element5:
+  name: References
+  requirements:
+  - 'requirement 1: References are available at the link below for our current terms
+    of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/'
+element6:
+  name: "CIS Critical Security Controls\xAE"
+  requirements:
+  - "requirement 1: CIS Critical Security Controls\xAE are available at the link below\
+    \ for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/"

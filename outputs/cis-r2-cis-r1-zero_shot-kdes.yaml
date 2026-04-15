@@ -3,52 +3,10 @@ element1:
   requirements:
   - requirement 1
   - requirement 2
-  - '...'
-element10:
-  name: Assessment Status
-  requirements:
-  - 'requirement 1: Assessment Status ....................................................................................................................
-    8'
-element11:
-  name: Automated
-  requirements:
-  - 'requirement 1: Automated .................................'
+  - requirement 3
 element2:
-  name: Terms of Use
+  name: "CIS Controls\xAE"
   requirements:
-  - 'requirement 1: Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/'
-element3:
-  name: Table of Contents
-  requirements:
-  - 'requirement 1: Terms of Use .....................................................................................................................
-    1'
-element4:
-  name: Overview
-  requirements:
-  - 'requirement 1: Overview ............................................................................................................................
-    5'
-element5:
-  name: Intended Audience
-  requirements:
-  - 'requirement 1: Intended Audience ...................................................................................................................
-    5'
-element6:
-  name: Consensus Guidance
-  requirements:
-  - 'requirement 1: Consensus Guidance ..............................................................................................................
-    6'
-element7:
-  name: Typographical Conventions
-  requirements:
-  - 'requirement 1: Typographical Conventions .......................................................................................................
-    7'
-element8:
-  name: Recommendation Definitions
-  requirements:
-  - 'requirement 1: Recommendation Definitions ....................................................................................................
-    8'
-element9:
-  name: Title
-  requirements:
-  - 'requirement 1: Title ....................................................................................................................................
-    8'
+  - 'CIS Control 1: [Description]'
+  - 'CIS Control 2: [Description]'
+  - 'CIS Control 3: [Description]'
