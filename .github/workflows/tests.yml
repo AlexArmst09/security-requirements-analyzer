@@ -14,6 +14,8 @@ jobs:
         run: pip install pymupdf pyyaml pandas pytest
       - name: Install Kubescape
         run: curl -s https://raw.githubusercontent.com/kubescape/kubescape/master/install.sh | /bin/bash
+      - name: Run Task 1 prompt tests
+        run: pytest task1_extractor/test_extractor.py::test_validate_inputs task1_extractor/test_extractor.py::test_zero_shot_prompt task1_extractor/test_extractor.py::test_few_shot_prompt task1_extractor/test_extractor.py::test_chain_of_thought_prompt -v
       - name: Run Task 2 tests
         run: pytest task2_comparator/test_comparator.py -v
       - name: Run Task 3 tests
