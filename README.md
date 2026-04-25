@@ -21,6 +21,11 @@ pip install -r requirements.txt
 python main.py pdfs/cis-r1.pdf pdfs/cis-r2.pdf
 ```
 
+### Run with the binary
+```bash
+./dist/main pdfs/cis-r1.pdf pdfs/cis-r2.pdf
+```
+
 ### Run the tests
 ```bash
 pytest task1_extractor/test_extractor.py
